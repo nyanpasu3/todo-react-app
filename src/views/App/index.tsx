@@ -32,6 +32,7 @@ export const App: React.FC = () => {
         )}
         {tasks.map((task) => (
           <InputTask
+            key={task.id}
             id={task.id}
             title={task.title}
             onDone={removeTask}
